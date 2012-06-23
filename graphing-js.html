@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+      <style type="text/css">
+         .pixel {
+            border: 0;
+            width: 1px;
+            height: 1px;
+            background: #aaa;
+         }
+
+         .dot {
+            border: 0;
+            width: 1px;
+            height: 1px;
+            background: #000;
+         }
+      </style>
+
+      <script src="graphing.js"></script>
+
+   </head>
+
+   <body>
+      <div id="form" style="position: absolute; top: 200px; left: 300px;">
+         <form>
+            <label>Equation: </label><input type="text" id="equation"/>
+            <input type="button" onclick="redrawGrid(document.getElementById('equation').value)" value="submit"/>
+         </form>
+      </div>
+      <div id="grid"></div>
+      <div><p id="output" style="position: absolute; top: 300px; left: 300px;"></p></div>
+   </body>
+
+   <script>
+//      outputWindowSize();
+//      drawGrid();
+   </script>
+</html>
